@@ -68,10 +68,10 @@ void tmg_fill_conn_travelers(tmg_conn_travelers *t, char *code) {
 	tnum++;
       }
     }
-    for (i=0; i<t->count; i++) {
-      printf("%d ", t->numbers[i]);
-    }
-    printf("\n");
+    //    for (i=0; i<t->count; i++) {
+    //  printf("%d ", t->numbers[i]);
+    // }
+    //printf("\n");
   }
 }
 

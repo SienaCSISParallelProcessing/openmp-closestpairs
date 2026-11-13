@@ -132,6 +132,8 @@ int main(int argc, char *argv[]) {
   }
 
   printf("Have %d tasks to be done\n", num_tasks);
+#pragma omp single
+  printf("Creating team of %d threads.\n", omp_get_num_threads());
   
   // start the timer
   gettimeofday(&start_time, NULL);
