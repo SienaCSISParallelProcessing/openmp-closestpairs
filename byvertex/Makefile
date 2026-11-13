@@ -7,7 +7,7 @@ CC=clang
 CFLAGS=-fopenmp=libomp
 
 $(PROGRAM):	$(OFILES)
-	$(CC) $(CFLAGS) -o $(PROGRAM) $(OFILES) -lreadline -lm
+	$(CC) $(CFLAGS) -o $(PROGRAM) $(OFILES) -lm
 
 clean::
 	/bin/rm $(PROGRAM) $(OFILES)
